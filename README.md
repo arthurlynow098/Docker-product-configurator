@@ -23,21 +23,16 @@ Para lidar com a natureza dos contêineres, apliquei duas estratégias de volume
 ### 4. Isolamento e Comunicação - Docker Networks
 Criei uma rede dedicada, a `app-network` tipo *bridge*. Isso permite que o contêiner do Apache se conecte ao banco de dados chamando apenas o nome do serviço `host = 'db'`, utilizando o DNS interno do Docker e mantendo o banco de dados isolado e seguro.
 
-## Como Executar o Projeto
-
-Se você tem o Docker instalado na sua máquina, basta clonar este repositório e executar na raiz do projeto:
-
-## Como rodar o projeto
-
-Para iniciar a aplicação, utilize o comando abaixo no seu terminal:
-
-```bash
-docker-compose up -d --build
-Após o build, a aplicação estará disponível no seu navegador em: http://localhost:8080.
-
-🎓 Certificação
+### Certificação
 Projeto desenvolvido como parte da certificação no curso Docker Essentials: A Developer Introduction.
 
 <p align="center">
-<img src="src/docker-essentials-a-developer-introduction.png" width="600" alt="Certificado Docker">
+<img src="src/docker-essentials-a-developer-introduction.png" width="400" alt="Certificado Docker">
 </p>
+
+
+## Como Executar o Projeto
+Se você tem o Docker instalado na sua máquina, basta clonar este repositório e executar na raiz do projeto:
+```bash
+docker-compose up -d --build
+Após o build, a aplicação estará disponível no navegador em http://localhost:8080.
