@@ -27,6 +27,10 @@ Para lidar com a natureza dos contêineres, apliquei duas estratégias de volume
 ### 4. Isolamento e Comunicação - Docker Networks
 Criei uma rede dedicada, a `app-network` tipo *bridge*. Isso permite que o contêiner do Apache se conecte ao banco de dados chamando apenas o nome do serviço `host = 'db'`, utilizando o DNS interno do Docker e mantendo o banco de dados isolado e seguro.
 
+## 🛠️ Troubleshooting
+- **Porta 8080 em uso:** Se a porta `8080` já estiver ocupada na sua máquina, edite o arquivo `docker-compose.yml` e altere o mapeamento para `- "8081:80"`.
+- **Erro de Conexão no PHP:** Lembre-se que o PHP deve se conectar ao host `db` (nome do serviço no compose) e não a `localhost`.
+
 ### Certificação
 Projeto desenvolvido como parte da certificação no curso Docker Essentials: A Developer Introduction.
 
