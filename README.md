@@ -1,5 +1,9 @@
 # 🐳 Docker Essentials: PHP/MySQL Development Environment
 
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
+
 ## Contexto do Projeto
 Este repositório contém o projeto prático desenvolvido para consolidar os conhecimentos adquiridos no curso **Docker Essentials: A Developer Introduction**. 
 
