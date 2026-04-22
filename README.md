@@ -39,5 +39,5 @@ Após o build, a aplicação estará disponível no seu navegador em: http://loc
 Projeto desenvolvido como parte da certificação no curso Docker Essentials: A Developer Introduction.
 
 <p align="center">
-<img src="src/seu-certificado-docker.jpeg" width="600" alt="Certificado Docker">
+<img src="src/docker-essentials-a-developer-introduction.png" width="600" alt="Certificado Docker">
 </p>
