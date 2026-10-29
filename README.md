@@ -1,6 +1,6 @@
-<p align="center"><img src="https://raw.githubusercontent.com/arthurlynow098/arthurlynow098/main/assets/ars-codex-banner.png" alt="Arthur Mendes Entsev — gravura alquímica minimalista" width="100%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/arthurlynow098/arthurlynow098/main/assets/ars-codex-banner.png" alt="Arthur Mendes Entsev — gravura em preto e branco" width="100%"></p>
 
-<p align="center"><sub>☉ &nbsp; ARS CODEX &nbsp; · &nbsp; Docker-product-configurator &nbsp; ☽</sub></p>
+<p align="center"><sub>Docker-product-configurator</sub></p>
 
 ---
 
@@ -55,4 +55,4 @@ Após o build, a aplicação estará disponível no navegador em http://localhos
 
 ---
 
-<p align="center"><sub>☿ &nbsp; Estudo · construção · evolução &nbsp; ☿</sub><br><a href="https://github.com/arthurlynow098">Perfil</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
+<p align="center"><sub>Estudo · construção · evolução</sub><br><a href="https://github.com/arthurlynow098">Perfil</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
