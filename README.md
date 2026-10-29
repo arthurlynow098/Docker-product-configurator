@@ -1,3 +1,9 @@
+<p align="center"><img src="https://raw.githubusercontent.com/arthurlynow098/arthurlynow098/main/assets/ars-codex-banner.png" alt="Arthur Mendes Entsev — gravura alquímica minimalista" width="100%"></p>
+
+<p align="center"><sub>☉ &nbsp; ARS CODEX &nbsp; · &nbsp; Docker-product-configurator &nbsp; ☽</sub></p>
+
+---
+
 # 🐳 Docker Essentials: PHP/MySQL Development Environment
 
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -42,5 +48,11 @@ Projeto desenvolvido como parte da certificação no curso Docker Essentials: A 
 ## Como Executar o Projeto
 Se você tem o Docker instalado na sua máquina, basta clonar este repositório e executar na raiz do projeto:
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
+```
+
 Após o build, a aplicação estará disponível no navegador em http://localhost:8080.
+
+---
+
+<p align="center"><sub>☿ &nbsp; Estudo · construção · evolução &nbsp; ☿</sub><br><a href="https://github.com/arthurlynow098">Perfil</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
