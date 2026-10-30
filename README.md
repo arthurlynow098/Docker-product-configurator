@@ -4,21 +4,33 @@
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Docker-C52E36?style=flat-square" alt="Docker">
-  <img src="https://img.shields.io/badge/PHP-24272E?style=flat-square" alt="PHP">
-  <img src="https://img.shields.io/badge/MySQL-24272E?style=flat-square" alt="MySQL">
-</p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Docker · PHP · MySQL" width="72%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
 ---
 
-## Visão geral
+<a id="explore-o-projeto"></a>
+
+![Explore o projeto](assets/docs/section-01.svg)
+
+![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
+
+| Área | O que você encontra | Acesso direto |
+|---|---|---|
+| **Serviços** | Configuração dos containers do ambiente. | [Abrir serviços →](docker-compose.yml) |
+| **Imagem** | Etapas de construção da imagem. | [Abrir imagem →](Dockerfile) |
+| **Aplicação** | Página PHP executada no ambiente. | [Abrir aplicação →](src/index.php) |
+
+<a id="visão-geral"></a>
+
+![Visão geral](assets/docs/section-02.svg)
 
 Desenvolvido como projeto prático da certificação **Docker Essentials: A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
-## Recursos
+<a id="recursos"></a>
+
+![Recursos](assets/docs/section-03.svg)
 
 | Recurso | Como funciona |
 |---|---|
@@ -29,7 +41,9 @@ Desenvolvido como projeto prático da certificação **Docker Essentials: A Deve
 | Isolamento em Rede Bridge | A rede dedicada app-network permite resolução DNS interna pelo hostname db, mantendo o banco seguro. |
 | Variáveis de Ambiente | Arquivo .env.example documenta as credenciais de banco desacopladas do código-fonte. |
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+![Tecnologias](assets/docs/section-04.svg)
 
 - **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços;
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas;
@@ -50,7 +64,9 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 </details>
 
-## Certificação
+<a id="certificação"></a>
+
+![Certificação](assets/docs/section-05.svg)
 
 <p align="center">
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
@@ -62,7 +78,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 ```text
 Docker-product-configurator/
 ├── assets/
-│   └── project-animal.png          Emblema do projeto
+│   └── banner-v2.png               Banner do projeto
 ├── src/
 │   ├── index.php                                           Aplicação PHP conectada ao serviço MySQL
 │   └── docker-essentials-a-developer-introduction.png      Certificado de conclusão
@@ -74,7 +90,9 @@ Docker-product-configurator/
 
 </details>
 
-## Como executar
+<a id="como-executar"></a>
+
+![Como executar](assets/docs/section-06.svg)
 
 1. Clone o repositório e configure o arquivo .env:
    ```bash
@@ -88,7 +106,9 @@ Docker-product-configurator/
    ```
 3. Acesse a aplicação no navegador em http://localhost:8080.
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+![Decisões técnicas](assets/docs/section-07.svg)
 
 - **Dockerfile próprio em vez de imagem crua:** evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço:** conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
