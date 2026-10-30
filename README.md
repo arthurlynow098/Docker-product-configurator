@@ -4,7 +4,7 @@
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Docker · PHP · MySQL" width="72%"></p>
+<p align="center"><img src="assets/docs/tags.svg" alt="Docker · PHP · MySQL" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
@@ -16,11 +16,12 @@
 
 ![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-| Área | O que você encontra | Acesso direto |
-|---|---|---|
-| **Serviços** | Configuração dos containers do ambiente. | [Abrir serviços →](docker-compose.yml) |
-| **Imagem** | Etapas de construção da imagem. | [Abrir imagem →](Dockerfile) |
-| **Aplicação** | Página PHP executada no ambiente. | [Abrir aplicação →](src/index.php) |
+<table width="100%">
+<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
+<tr><td><strong>Serviços</strong></td><td>Configuração dos containers do ambiente.</td><td><a href="docker-compose.yml">Abrir serviços →</a></td></tr>
+<tr><td><strong>Imagem</strong></td><td>Etapas de construção da imagem.</td><td><a href="Dockerfile">Abrir imagem →</a></td></tr>
+<tr><td><strong>Aplicação</strong></td><td>Página PHP executada no ambiente.</td><td><a href="src/index.php">Abrir aplicação →</a></td></tr>
+</table>
 
 <a id="visão-geral"></a>
 
