@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="assets/project-animal.png" alt="Emblema de Docker-product-configurator" width="144" height="144">
+  <img src="assets/banner-v2.png" alt="Docker-product-configurator" width="100%">
 </p>
-
-<h1 align="center">Docker-product-configurator</h1>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
