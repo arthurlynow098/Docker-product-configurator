@@ -1,50 +1,55 @@
 <p align="center">
-  <img src="assets/banner-v2.png" alt="Docker-product-configurator" width="100%">
+  <img src="assets/identity/banner.png" alt="Docker-product-configurator" width="100%">
 </p>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
-<p align="center"><img src="assets/docs/tags.svg" alt="Docker · PHP · MySQL" width="100%"></p>
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <a id="explore-o-projeto"></a>
 
-![Explore o projeto](assets/docs/section-01.svg)
+## Por onde começar
 
-![Mapa visual dos arquivos e responsabilidades](assets/docs/map.svg)
 
-<table width="100%">
-<tr><th align="left">Área</th><th align="left">O que você encontra</th><th align="left">Acesso direto</th></tr>
-<tr><td><strong>Serviços</strong></td><td>Configuração dos containers do ambiente.</td><td><a href="docker-compose.yml">Abrir serviços →</a></td></tr>
-<tr><td><strong>Imagem</strong></td><td>Etapas de construção da imagem.</td><td><a href="Dockerfile">Abrir imagem →</a></td></tr>
-<tr><td><strong>Aplicação</strong></td><td>Página PHP executada no ambiente.</td><td><a href="src/index.php">Abrir aplicação →</a></td></tr>
-</table>
+- **[Serviços](docker-compose.yml)** — Configuração dos containers do ambiente.
+- **[Imagem](Dockerfile)** — Etapas de construção da imagem.
+- **[Aplicação](src/index.php)** — Página PHP executada no ambiente.
+
 
 <a id="visão-geral"></a>
 
-![Visão geral](assets/docs/section-02.svg)
+## Visão geral
 
 Desenvolvido como projeto prático da certificação **Docker Essentials: A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
 <a id="recursos"></a>
 
-![Recursos](assets/docs/section-03.svg)
+## Recursos
 
-| Recurso | Como funciona |
-|---|---|
-| Orquestração Multi-Container | docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL. |
-| Imagem PHP Customizada | Dockerfile baseado em php:8.2-apache com instalação automática de mysqli, pdo_mysql e ativação do mod_rewrite. |
-| Persistência com Named Volume | O volume db_data preserva as tabelas e registros do MySQL mesmo que os contêineres sejam recriados. |
-| Hot-Reload via Bind Mount | O mapeamento ./src:/var/www/html reflete edições no código-fonte instantaneamente sem novo build. |
-| Isolamento em Rede Bridge | A rede dedicada app-network permite resolução DNS interna pelo hostname db, mantendo o banco seguro. |
-| Variáveis de Ambiente | Arquivo .env.example documenta as credenciais de banco desacopladas do código-fonte. |
+**Orquestração Multi-Container**<br>
+docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL.
+
+**Imagem PHP Customizada**<br>
+Dockerfile baseado em php:8.2-apache com instalação automática de mysqli, pdo_mysql e ativação do mod_rewrite.
+
+**Persistência com Named Volume**<br>
+O volume db_data preserva as tabelas e registros do MySQL mesmo que os contêineres sejam recriados.
+
+**Hot-Reload via Bind Mount**<br>
+O mapeamento ./src:/var/www/html reflete edições no código-fonte instantaneamente sem novo build.
+
+**Isolamento em Rede Bridge**<br>
+A rede dedicada app-network permite resolução DNS interna pelo hostname db, mantendo o banco seguro.
+
+**Variáveis de Ambiente**<br>
+Arquivo .env.example documenta as credenciais de banco desacopladas do código-fonte.
 
 <a id="tecnologias"></a>
 
-![Tecnologias](assets/docs/section-04.svg)
+## Tecnologias
 
 - **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços;
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas;
@@ -67,7 +72,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 <a id="certificação"></a>
 
-![Certificação](assets/docs/section-05.svg)
+## Certificação
 
 <p align="center">
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
@@ -79,7 +84,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 ```text
 Docker-product-configurator/
 ├── assets/
-│   └── banner-v2.png               Banner do projeto
+│   └── identity/banner.png               Banner do projeto
 ├── src/
 │   ├── index.php                                           Aplicação PHP conectada ao serviço MySQL
 │   └── docker-essentials-a-developer-introduction.png      Certificado de conclusão
@@ -93,7 +98,7 @@ Docker-product-configurator/
 
 <a id="como-executar"></a>
 
-![Como executar](assets/docs/section-06.svg)
+## Como executar
 
 1. Clone o repositório e configure o arquivo .env:
    ```bash
@@ -109,12 +114,12 @@ Docker-product-configurator/
 
 <a id="decisões-técnicas"></a>
 
-![Decisões técnicas](assets/docs/section-07.svg)
+## Decisões técnicas
 
 - **Dockerfile próprio em vez de imagem crua:** evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço:** conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
 
----
+<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
