@@ -1,13 +1,11 @@
-<p align="center">
-  <img src="assets/identity/banner.png" alt="Docker-product-configurator" width="100%">
-</p>
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Product Configurator — Docker · aplicação web · dados" width="100%"></p>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <a id="explore-o-projeto"></a>
 
@@ -21,7 +19,7 @@
 
 <a id="visão-geral"></a>
 
-## Visão geral
+## Sobre o projeto
 
 Desenvolvido como projeto prático da certificação **Docker Essentials: A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
@@ -55,8 +53,8 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas;
 - **MySQL** operando em contêiner dedicado com armazenamento persistente.
 
-<details>
-<summary>Arquitetura</summary>
+## Arquitetura
+
 
 ```mermaid
 flowchart LR
@@ -68,7 +66,6 @@ flowchart LR
 
 O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto a comunicação entre aplicação e banco de dados trafega exclusivamente dentro da rede interna app-network.
 
-</details>
 
 <a id="certificação"></a>
 
@@ -78,8 +75,8 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
 </p>
 
-<details>
-<summary>Estrutura do repositório</summary>
+## Estrutura do repositório
+
 
 ```text
 Docker-product-configurator/
@@ -94,7 +91,6 @@ Docker-product-configurator/
 └── README.md
 ```
 
-</details>
 
 <a id="como-executar"></a>
 
@@ -119,10 +115,16 @@ Docker-product-configurator/
 - **Dockerfile próprio em vez de imagem crua:** evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço:** conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
 
-<p align="center"><img src="assets/identity/divider.svg" alt="" width="100%"></p>
+---
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
   <a href="https://arthurentsev.vercel.app/">Portfólio</a> &nbsp;·&nbsp;
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
+
+## Identidade visual e créditos
+
+**Pelicano** — Agrupa e transporta componentes em um conjunto. [Logo em PNG](assets/identity-v2/logo.png).
+
+Identidade organizada a partir das artes fornecidas por Arthur Entsev. Direção visual e organização documental inspiradas em [LynowCut](https://github.com/arthurlynow098/LynowCut) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Tipografia **Inter**, com licença SIL Open Font License em [Inter-OFL.txt](assets/identity-v2/Inter-OFL.txt).
