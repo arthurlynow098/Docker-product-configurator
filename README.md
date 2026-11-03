@@ -36,7 +36,7 @@ Desenvolvido como projeto prático da certificação **Docker Essentials: A Deve
 
 <a id="recursos"></a>
 
-<a id="recursos"></a>
+
 
 <p><img src="assets/identity-v2/section-03.svg" alt="Recursos" width="100%"></p>
 
@@ -60,7 +60,7 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <a id="tecnologias"></a>
 
-<a id="tecnologias"></a>
+
 
 <p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
 
@@ -86,7 +86,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 <a id="certificação"></a>
 
-<a id="certificação"></a>
+
 
 <p><img src="assets/identity-v2/section-06.svg" alt="Certificação" width="100%"></p>
 
@@ -115,7 +115,7 @@ Docker-product-configurator/
 
 <a id="como-executar"></a>
 
-<a id="como-executar"></a>
+
 
 <p><img src="assets/identity-v2/section-08.svg" alt="Como executar" width="100%"></p>
 
@@ -133,7 +133,7 @@ Docker-product-configurator/
 
 <a id="decisões-técnicas"></a>
 
-<a id="decisões-técnicas"></a>
+
 
 <p><img src="assets/identity-v2/section-09.svg" alt="Decisões técnicas" width="100%"></p>
 
