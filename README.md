@@ -1,15 +1,24 @@
-<p align="center"><img src="assets/identity-v2/banner.png" alt="Product Configurator — Docker · aplicação web · dados" width="100%"></p>
+<a id="top"></a>
+
+<p align="center"><img src="assets/identity-v2/banner.png" alt="Product Configurator" width="100%"></p>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
+
+<p align="center">
+<img alt="Docker" src="https://img.shields.io/badge/Docker-168DDD?style=for-the-badge&amp;logo=docker&amp;logoColor=white">
+<img alt="PHP" src="https://img.shields.io/badge/PHP-168DDD?style=for-the-badge&amp;logo=php&amp;logoColor=white">
+<img alt="MySQL" src="https://img.shields.io/badge/MySQL-168DDD?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
+</p>
 
 
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
 
----
 
 <a id="explore-o-projeto"></a>
 
-## Por onde começar
+<a id="por-onde-começar"></a>
+
+<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
 - **[Serviços](docker-compose.yml)** — Configuração dos containers do ambiente.
@@ -19,13 +28,17 @@
 
 <a id="visão-geral"></a>
 
-## Sobre o projeto
+<a id="sobre-o-projeto"></a>
+
+<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
 
 Desenvolvido como projeto prático da certificação **Docker Essentials: A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
 <a id="recursos"></a>
 
-## Recursos
+<a id="recursos"></a>
+
+<p><img src="assets/identity-v2/section-03.svg" alt="Recursos" width="100%"></p>
 
 **Orquestração Multi-Container**<br>
 docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL.
@@ -47,13 +60,17 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <a id="tecnologias"></a>
 
-## Tecnologias
+<a id="tecnologias"></a>
+
+<p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
 
 - **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços;
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas;
 - **MySQL** operando em contêiner dedicado com armazenamento persistente.
 
-## Arquitetura
+<a id="arquitetura"></a>
+
+<p><img src="assets/identity-v2/section-05.svg" alt="Arquitetura" width="100%"></p>
 
 
 ```mermaid
@@ -69,13 +86,17 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 <a id="certificação"></a>
 
-## Certificação
+<a id="certificação"></a>
+
+<p><img src="assets/identity-v2/section-06.svg" alt="Certificação" width="100%"></p>
 
 <p align="center">
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
 </p>
 
-## Estrutura do repositório
+<a id="estrutura-do-repositório"></a>
+
+<p><img src="assets/identity-v2/section-07.svg" alt="Estrutura do repositório" width="100%"></p>
 
 
 ```text
@@ -94,7 +115,9 @@ Docker-product-configurator/
 
 <a id="como-executar"></a>
 
-## Como executar
+<a id="como-executar"></a>
+
+<p><img src="assets/identity-v2/section-08.svg" alt="Como executar" width="100%"></p>
 
 1. Clone o repositório e configure o arquivo .env:
    ```bash
@@ -110,12 +133,13 @@ Docker-product-configurator/
 
 <a id="decisões-técnicas"></a>
 
-## Decisões técnicas
+<a id="decisões-técnicas"></a>
+
+<p><img src="assets/identity-v2/section-09.svg" alt="Decisões técnicas" width="100%"></p>
 
 - **Dockerfile próprio em vez de imagem crua:** evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço:** conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
 
----
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
@@ -123,8 +147,13 @@ Docker-product-configurator/
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
 
-## Identidade visual e créditos
 
-**Pelicano** — Agrupa e transporta componentes em um conjunto. [Logo em PNG](assets/identity-v2/logo.png).
+<a id="identidade-e-créditos"></a>
 
-Identidade organizada a partir das artes fornecidas por Arthur Entsev. Direção visual e organização documental inspiradas em [LynowCut](https://github.com/arthurlynow098/LynowCut) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Tipografia **Inter**, com licença SIL Open Font License em [Inter-OFL.txt](assets/identity-v2/Inter-OFL.txt).
+<p><img src="assets/identity-v2/section-10.svg" alt="Identidade e créditos" width="100%"></p>
+
+<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
+
+Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação: [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+
+<p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
