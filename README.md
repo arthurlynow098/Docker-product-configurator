@@ -21,9 +21,9 @@
 <p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
 
 
-- **[Serviços](docker-compose.yml)** — Configuração dos containers do ambiente.
-- **[Imagem](Dockerfile)** — Etapas de construção da imagem.
-- **[Aplicação](src/index.php)** — Página PHP executada no ambiente.
+- **[Serviços](docker-compose.yml)**, configuração dos containers do ambiente.
+- **[Imagem](Dockerfile)**, etapas de construção da imagem.
+- **[Aplicação](src/index.php)**, página PHP executada no ambiente.
 
 
 <a id="visão-geral"></a>
@@ -32,7 +32,7 @@
 
 <p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
 
-Desenvolvido como projeto prático da certificação **Docker Essentials: A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
+Desenvolvido como projeto prático da certificação **Docker Essentials, A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
 <a id="recursos"></a>
 
@@ -44,13 +44,13 @@ Desenvolvido como projeto prático da certificação **Docker Essentials: A Deve
 docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL.
 
 **Imagem PHP Customizada**<br>
-Dockerfile baseado em php:8.2-apache com instalação automática de mysqli, pdo_mysql e ativação do mod_rewrite.
+Dockerfile baseado em `php:8.2-apache` com instalação automática de mysqli, pdo_mysql e ativação do mod_rewrite.
 
 **Persistência com Named Volume**<br>
 O volume db_data preserva as tabelas e registros do MySQL mesmo que os contêineres sejam recriados.
 
 **Hot-Reload via Bind Mount**<br>
-O mapeamento ./src:/var/www/html reflete edições no código-fonte instantaneamente sem novo build.
+O mapeamento `./src:/var/www/html` reflete edições no código-fonte instantaneamente sem novo build.
 
 **Isolamento em Rede Bridge**<br>
 A rede dedicada app-network permite resolução DNS interna pelo hostname db, mantendo o banco seguro.
@@ -64,8 +64,8 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
 
-- **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços;
-- **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas;
+- **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços
+- **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas
 - **MySQL** operando em contêiner dedicado com armazenamento persistente.
 
 <a id="arquitetura"></a>
@@ -119,13 +119,13 @@ Docker-product-configurator/
 
 <p><img src="assets/identity-v2/section-08.svg" alt="Como executar" width="100%"></p>
 
-1. Clone o repositório e configure o arquivo .env:
+1. Clone o repositório e configure o arquivo .env
    ```bash
    git clone https://github.com/arthurlynow098/Docker-product-configurator.git
    cd Docker-product-configurator
    cp .env.example .env
    ```
-2. Construa e inicie os contêineres em segundo plano:
+2. Construa e inicie os contêineres em segundo plano
    ```bash
    docker compose up -d --build
    ```
@@ -137,8 +137,8 @@ Docker-product-configurator/
 
 <p><img src="assets/identity-v2/section-09.svg" alt="Decisões técnicas" width="100%"></p>
 
-- **Dockerfile próprio em vez de imagem crua:** evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
-- **DNS interno por nome de serviço:** conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
+- **Dockerfile próprio em vez de imagem crua.** Evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
+- **DNS interno por nome de serviço.** Conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
 
 
 <p align="center">
@@ -154,6 +154,6 @@ Docker-product-configurator/
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
-Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação: [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
 
 <p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
