@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-<p align="center"><img src="assets/identity-v2/banner.png" alt="Product Configurator" width="100%"></p>
+<p align="center"><img src="assets/banner.png" alt="Product Configurator" width="100%"></p>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
 
@@ -18,7 +18,7 @@
 
 <a id="por-onde-começar"></a>
 
-<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
+<p><img src="assets/secao-01.png" alt="Por onde começar" width="100%"></p>
 
 
 - **[Serviços](docker-compose.yml)**, configuração dos containers do ambiente.
@@ -30,7 +30,7 @@
 
 <a id="sobre-o-projeto"></a>
 
-<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
+<p><img src="assets/secao-02.png" alt="Sobre o projeto" width="100%"></p>
 
 Desenvolvido como projeto prático da certificação **Docker Essentials, A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
@@ -38,7 +38,7 @@ Desenvolvido como projeto prático da certificação **Docker Essentials, A Deve
 
 
 
-<p><img src="assets/identity-v2/section-03.svg" alt="Recursos" width="100%"></p>
+<p><img src="assets/secao-03.png" alt="Recursos" width="100%"></p>
 
 **Orquestração Multi-Container**<br>
 docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL.
@@ -62,7 +62,7 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 
 
-<p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
+<p><img src="assets/secao-04.png" alt="Tecnologias" width="100%"></p>
 
 - **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas
@@ -70,7 +70,7 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <a id="arquitetura"></a>
 
-<p><img src="assets/identity-v2/section-05.svg" alt="Arquitetura" width="100%"></p>
+<p><img src="assets/secao-05.png" alt="Arquitetura" width="100%"></p>
 
 
 ```mermaid
@@ -88,7 +88,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 
 
-<p><img src="assets/identity-v2/section-06.svg" alt="Certificação" width="100%"></p>
+<p><img src="assets/secao-06.png" alt="Certificação" width="100%"></p>
 
 <p align="center">
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
@@ -96,7 +96,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 <a id="estrutura-do-repositório"></a>
 
-<p><img src="assets/identity-v2/section-07.svg" alt="Estrutura do repositório" width="100%"></p>
+<p><img src="assets/secao-07.png" alt="Estrutura do repositório" width="100%"></p>
 
 
 ```text
@@ -117,7 +117,7 @@ Docker-product-configurator/
 
 
 
-<p><img src="assets/identity-v2/section-08.svg" alt="Como executar" width="100%"></p>
+<p><img src="assets/secao-08.png" alt="Como executar" width="100%"></p>
 
 1. Clone o repositório e configure o arquivo .env
    ```bash
@@ -135,7 +135,7 @@ Docker-product-configurator/
 
 
 
-<p><img src="assets/identity-v2/section-09.svg" alt="Decisões técnicas" width="100%"></p>
+<p><img src="assets/secao-09.png" alt="Decisões técnicas" width="100%"></p>
 
 - **Dockerfile próprio em vez de imagem crua.** Evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço.** Conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
@@ -150,9 +150,9 @@ Docker-product-configurator/
 
 <a id="identidade-e-créditos"></a>
 
-<p><img src="assets/identity-v2/section-10.svg" alt="Identidade e créditos" width="100%"></p>
+<p><img src="assets/secao-10.png" alt="Identidade e créditos" width="100%"></p>
 
-<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
+<table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/banner.png">Banner em PNG</a></td></tr></table>
 
 Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
 
