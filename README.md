@@ -138,6 +138,6 @@ Docker-product-configurator/
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
-Artes da coleção fornecida por **Arthur Entsev**, com adaptação das logos e acabamento dos banners realizados com auxílio de geração de imagens. Referências de identidade e apresentação, [LynowCut](https://github.com/arthurlynow098/LynowCut), [LynowMic](https://github.com/arthurlynow098/LynowMic) e [LynowCatch](https://github.com/arthurlynow098/LynowCatch). Os créditos e avisos do conteúdo original foram preservados.
+A gravura do banner é o pelicano do Royal Natural History de Richard Lydekker, de 1893, em domínio público no [Wikimedia Commons](https://commons.wikimedia.org/wiki/File%3AThe_royal_natural_history_%281893%29_%2814784523862%29.jpg).
 
 <p align="center"><a href="#top">Voltar ao topo ↑</a> · <a href="https://github.com/arthurlynow098">Arthur Entsev</a> · <a href="https://arthurentsev.vercel.app/">Portfólio</a></p>
