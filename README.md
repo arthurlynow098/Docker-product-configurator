@@ -1,5 +1,9 @@
 <a id="top"></a>
 
+<p align="center"><sub>Docker Product Configurator</sub></p>
+
+---
+
 <p align="center"><img src="assets/identity-v2/banner.png" alt="Product Configurator" width="100%"></p>
 
 <p align="center">Ambiente em containers para um configurador de produtos com aplicação web e banco de dados.</p>
@@ -10,35 +14,29 @@
 <img alt="MySQL" src="https://img.shields.io/badge/MySQL-168DDD?style=for-the-badge&amp;logo=mysql&amp;logoColor=white">
 </p>
 
-
 <p align="center"><a href="#visão-geral">Visão geral</a> &nbsp;·&nbsp; <a href="#recursos">Recursos</a> &nbsp;·&nbsp; <a href="#como-executar">Como executar</a></p>
-
 
 <a id="explore-o-projeto"></a>
 
 <a id="por-onde-começar"></a>
 
-<p><img src="assets/identity-v2/section-01.svg" alt="Por onde começar" width="100%"></p>
-
+## Por onde começar
 
 - **[Serviços](docker-compose.yml)**, configuração dos containers do ambiente.
 - **[Imagem](Dockerfile)**, etapas de construção da imagem.
 - **[Aplicação](src/index.php)**, página PHP executada no ambiente.
 
-
 <a id="visão-geral"></a>
 
 <a id="sobre-o-projeto"></a>
 
-<p><img src="assets/identity-v2/section-02.svg" alt="Sobre o projeto" width="100%"></p>
+## Sobre o projeto
 
 Desenvolvido como projeto prático da certificação **Docker Essentials, A Developer Introduction (IBM)**, o repositório combina um Dockerfile customizado com orquestração via docker-compose.yml, redes internas isoladas e persistência de dados em volumes nomeados.
 
 <a id="recursos"></a>
 
-
-
-<p><img src="assets/identity-v2/section-03.svg" alt="Recursos" width="100%"></p>
+## Recursos
 
 **Orquestração Multi-Container**<br>
 docker-compose.yml coordena a inicialização conjunta do servidor Apache/PHP e do banco MySQL.
@@ -60,9 +58,7 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <a id="tecnologias"></a>
 
-
-
-<p><img src="assets/identity-v2/section-04.svg" alt="Tecnologias" width="100%"></p>
+## Tecnologias
 
 - **Docker Engine & Docker Compose** para construção de imagem, rede e ciclo de vida dos serviços
 - **PHP 8.2 + Apache** com extensões de conectividade relacional pré-compiladas
@@ -70,8 +66,7 @@ Arquivo .env.example documenta as credenciais de banco desacopladas do código-f
 
 <a id="arquitetura"></a>
 
-<p><img src="assets/identity-v2/section-05.svg" alt="Arquitetura" width="100%"></p>
-
+## Arquitetura
 
 ```mermaid
 flowchart LR
@@ -83,12 +78,9 @@ flowchart LR
 
 O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto a comunicação entre aplicação e banco de dados trafega exclusivamente dentro da rede interna app-network.
 
-
 <a id="certificação"></a>
 
-
-
-<p><img src="assets/identity-v2/section-06.svg" alt="Certificação" width="100%"></p>
+## Certificação
 
 <p align="center">
   <img src="src/docker-essentials-a-developer-introduction.png" width="420" alt="Certificado Docker Essentials">
@@ -96,8 +88,7 @@ O tráfego externo entra apenas pela porta 8080 mapeada para o Apache, enquanto 
 
 <a id="estrutura-do-repositório"></a>
 
-<p><img src="assets/identity-v2/section-07.svg" alt="Estrutura do repositório" width="100%"></p>
-
+## Estrutura do repositório
 
 ```text
 Docker-product-configurator/
@@ -112,12 +103,9 @@ Docker-product-configurator/
 └── README.md
 ```
 
-
 <a id="como-executar"></a>
 
-
-
-<p><img src="assets/identity-v2/section-08.svg" alt="Como executar" width="100%"></p>
+## Como executar
 
 1. Clone o repositório e configure o arquivo .env
    ```bash
@@ -133,13 +121,10 @@ Docker-product-configurator/
 
 <a id="decisões-técnicas"></a>
 
-
-
-<p><img src="assets/identity-v2/section-09.svg" alt="Decisões técnicas" width="100%"></p>
+## Decisões técnicas
 
 - **Dockerfile próprio em vez de imagem crua.** Evita ter que instalar extensões pdo_mysql e mysqli manualmente a cada inicialização do contêiner.
 - **DNS interno por nome de serviço.** Conectar o PHP ao host db em vez de localhost desacopla a aplicação de endereços IP dinâmicos.
-
 
 <p align="center">
   <a href="https://github.com/arthurlynow098">GitHub</a> &nbsp;·&nbsp;
@@ -147,10 +132,9 @@ Docker-product-configurator/
   <a href="https://www.linkedin.com/in/entsevarthur/">LinkedIn</a>
 </p>
 
-
 <a id="identidade-e-créditos"></a>
 
-<p><img src="assets/identity-v2/section-10.svg" alt="Identidade e créditos" width="100%"></p>
+## Identidade e créditos
 
 <table><tr><td width="150"><img src="assets/identity-v2/logo.png" alt="Pelicano" width="130"></td><td><strong>Pelicano</strong><br>Agrupa e transporta componentes em um conjunto.<br><br><a href="assets/identity-v2/logo.png">Logo em PNG</a> · <a href="assets/identity-v2/banner.png">Banner em PNG</a></td></tr></table>
 
